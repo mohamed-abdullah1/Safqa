@@ -1,0 +1,17 @@
+@use "../../global/mixin.scss" as mixin;
+.container {
+  flex: 2;
+  // border: solid red 1px;
+}
+.search {
+  &::placeholder {
+    color: mixin.$black-clr;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+  }
+  &:focus {
+    border: solid 1px mixin.$black-clr;
+  }
+}
+.iconContainer {
+}

@@ -1,0 +1,40 @@
+@use "../../global/mixin.scss" as mixin;
+.container {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding-top: 8px;
+  background-color: mixin.$white-clr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  & > ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  & > ul > li {
+    list-style: none;
+    /* This will remove the bullets/numbers */
+  }
+  & > ul > li > a {
+    color: mixin.$black-clr;
+    display: block;
+    height: 100%;
+  }
+}
+.itemContainer {
+  // border: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  & p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+.icon {
+  color: mixin.$black-clr;
+  font-size: 24px;
+}
