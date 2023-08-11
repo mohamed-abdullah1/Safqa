@@ -12,7 +12,11 @@ import Topbar from "./components/TopBar/Topbar";
 
 function App() {
   return (
-    <>
+    <div
+      style={{
+        marginBottom: 80,
+      }}
+    >
       <Topbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +25,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <BottomNav />
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./product.module.scss";
+import Rating from "../Rating/Rating";
 
 const Product = ({ product }) => {
   return (
@@ -12,10 +13,12 @@ const Product = ({ product }) => {
           ? product?.title.slice(0, 60) + " .."
           : product?.title}
       </p>
-      <p className={styles.price}>EGP {product?.price}</p>
+      <p>
+        EGP<span className={styles.price}> {product?.price}</span>
+      </p>
       <div className={styles.itemsContainer}>
-        <p>express</p>
-        <p>{product?.rating}</p>
+        {/* <p>express</p> */}
+        <Rating value={product?.rating} />
         <p>({product?.numOfRates})</p>
       </div>
     </div>

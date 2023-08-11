@@ -2,18 +2,20 @@
 
 .container {
   background-color: mixin.$muted-clr;
-  overflow: auto; /* Enable scrolling for content that overflows the container */
-  white-space: nowrap; /* Keep all items in a single line to enable horizontal scrolling */
-  // width: 500px;
+  margin: 20px 0;
+
   // display: flex;
 }
 .title {
   text-align: start;
-  padding: 16px 8px;
-  font-weight: 500;
-  font-size: 18px;
+  padding: 16px 16px 0px;
+  font-weight: 600;
+  font-size: 20px;
 }
 .products {
   display: flex;
   flex-wrap: nowrap;
+  overflow: auto; /* Enable scrolling for content that overflows the container */
+  white-space: nowrap; /* Keep all items in a single line to enable horizontal scrolling */
+  // width: 500px;
 }

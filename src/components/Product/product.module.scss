@@ -8,8 +8,12 @@
   margin: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   P {
     text-align: start;
+  }
+  p:nth-child(3) {
+    font-size: 14px;
   }
 }
 .title {
@@ -21,7 +25,8 @@
   white-space: pre-wrap;
 }
 .price {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
 }
 .imgContainer {
   width: 140px;
